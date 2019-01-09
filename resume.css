@@ -69,9 +69,34 @@ ul.sprig {
   list-style-type: none;
 }
 
-/*section > .sprig > li > .sprig {
+.sprig {
+  display: none;
 }
-*/
+
+.show-0 .level-0 {
+  display: block;
+}
+
+.show-1 .level-1 {
+  display: block;
+}
+
+.show-2 .level-2 {
+  display: block;
+}
+
+.show-3 .level-3 {
+  display: block;
+}
+
+.show-4 .level-4 {
+  display: block;
+}
+
+.show-5 .level-5 {
+  display: block;
+}
+
 .sprigbody {
   padding-top: 0.5em;
 }
@@ -87,19 +112,6 @@ ul.sprig {
   margin-top: 0.5em;
   padding-left: 0;
 }
-
-/*
-.level-3 {
-  margin-top: 0.8em;
-  padding-left: 1.0em;
-}
-
-.level-4 {
-  margin-top: 0.8em;
-  padding-left: 1.0em;
-}
-
-*/
 
 .level-1 .title {
   font-size: 1.5em;
@@ -172,6 +184,13 @@ a:link {
 a:visited {
   color: hsl(0, 0%, 32%);
   font-weight: normal;
+}
+
+.controls {
+  position: fixed;
+  top: 0;
+  right: 0;
+  border: solid 1px #888;
 }
 
 @media (max-width: 568px) {
