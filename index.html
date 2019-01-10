@@ -85,7 +85,7 @@
 
   <body class="show-0">
     <section class="outer-container bloge">
-      <ul class="sprig level-0" id="llkGiyAj">
+      <ul class="sprig level-1" id="llkGiyAj">
         <li class="title">Jim Kang: Résumé</li>
         <li class="sprigbody">
           <p>
@@ -96,20 +96,15 @@
             I've worked on commercial products that were run by millions of
             users, as well as software for art and concept exploration.
           </p>
-          <div>
-            <br />
-            <div>
-              <div>
-                This is an overview of my work. If you just want to go straight
-                to my publicly available code,&nbsp;<a
-                  href="https://github.com/jimkang/?tab=repositories"
-                  >here are my Github repos</a
-                >&nbsp;and my&nbsp;<a href="https://www.npmjs.com/~jimkang"
-                  >NPM packages</a
-                >.
-              </div>
-            </div>
-          </div>
+          <p>
+            This is an overview of my work. If you just want to go straight
+            to my publicly available code,&nbsp;<a
+              href="https://github.com/jimkang/?tab=repositories"
+              >here are my Github repos</a
+            >&nbsp;and my&nbsp;<a href="https://www.npmjs.com/~jimkang"
+              >NPM packages</a
+            >.
+          </p>
         </li>
         <li>
           <ul class="sprig level-1" id="sy3YNAral">
@@ -454,7 +449,7 @@
         tl;dr
         <input
           type="range"
-          min="0"
+          min="1"
           max="3"
           id="tldr-slider"
           value="1"
@@ -469,6 +464,10 @@
       const maxLevel = 4;
 
       function onTLDRChange() {
+        updateTLDRClasses();
+      }
+
+      function updateTLDRClasses() {
         const level = slider.value;
         for (var i = 0; i <= maxLevel; ++i) {
           let className = "show-" + i;
@@ -479,6 +478,8 @@
           }
         }
       }
+
+      updateTLDRClasses();
     </script>
   </body>
 </html>
