@@ -9,13 +9,13 @@ body {
   background-color: hsl(34, 30%, 94%);
   color: hsl(230, 8%, 25%);
   
-  margin: 0;
   height: 100%;
-}
-
-.bloge {
-  margin-top: 0.2em;
+  margin: 0;
+  padding-top: 1em;
   padding-bottom: 4em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .bloge .title {
