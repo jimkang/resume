@@ -215,6 +215,10 @@ li.list-container {
   margin-bottom: 1.5em;
 }
 
+.instructions {
+  font-style: italic;
+}
+
 @media (max-width: 568px) {
   body {
     font-size: 18px;
