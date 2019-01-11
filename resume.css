@@ -193,6 +193,10 @@ a:visited {
   border: solid 1px #888;
 }
 
+li.list-container {
+  margin-bottom: 1.5em;
+}
+
 @media (max-width: 568px) {
   body {
     font-size: 18px;
