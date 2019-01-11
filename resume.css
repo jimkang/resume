@@ -19,6 +19,9 @@ body {
 
 #content-root {
   padding-bottom: 4em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-top: 0.5em;
 }
 
 .bloge .title {
@@ -72,6 +75,7 @@ section {
 ul.sprig {
   list-style-type: none;
   padding-left: 0;
+  padding-right: 0;
 }
 
 .sprig li {
@@ -194,6 +198,16 @@ a:visited {
   top: 0;
   right: 0;
   border: solid 1px #888;
+  background-color: black;
+  color: wheat;
+  width: 100%;
+  /*! align-items: center; */
+  display: flex;
+  justify-content: center;
+  font-family: brandon-grotesque, 'Helvetica Neue', Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  /*! align-items: flex-end; */
 }
 
 li.list-container {
