@@ -71,6 +71,10 @@ ul.sprig {
   padding-left: 0;
 }
 
+.sprig li {
+  margin-bottom: 0.5em;
+}
+
 .sprig {
   display: none;
 }
