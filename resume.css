@@ -12,10 +12,13 @@ body {
   height: 100%;
   margin: 0;
   padding-top: 1em;
-  padding-bottom: 4em;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+#content-root {
+  padding-bottom: 4em;
 }
 
 .bloge .title {
