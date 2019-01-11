@@ -523,7 +523,7 @@
 
     <div class="controls">
       <span>Less</span>
-      <input type="range" min="1" max="4" id="tldr-slider" value="1" />
+      <input type="range" min="1" max="4" id="tldr-slider" value="1" step="0.1"/>
       <span>More</span>
     </div>
 
@@ -538,7 +538,7 @@
       }
 
       function updateTLDRClasses() {
-        const level = slider.value;
+        const level = Math.round(slider.value);
         for (var i = 0; i <= maxLevel; ++i) {
           let className = "show-" + i;
           if (i <= level) {
