@@ -61,15 +61,21 @@ section {
 .sprig {
   max-width: 640px;
   margin-top: 0.8em;
-  padding-left: 1em;
+  /*! padding-left: 1em; */
   padding-right: 1em;
+  margin-top: 0;
 }
 
 ul.sprig {
   list-style-type: none;
+  padding-left: 0;
 }
 
 .sprig {
+  display: none;
+}
+
+.tldr {
   display: none;
 }
 
@@ -103,34 +109,12 @@ ul.sprig {
 
 .level-1 {
   margin-left: 0;
-  margin-top: 0.8em;
+  /*! margin-top: 0.8em; */
   margin-bottom: 0.5em;
-  padding-left: 0;
 }
 
 .level-2 {
   margin-top: 0.5em;
-  padding-left: 0;
-}
-
-.level-1 .title {
-  font-size: 1.5em;
-}
-
-.level-2 .title {
-  font-size: 1.2em;
-}
-
-.level-3 .title {
-  font-size: 1.1em;
-}
-
-.level-4 .title {
-  font-size: 1.1em;
-}
-
-.level-5 .title {
-  font-size: 1.1em;
 }
 
 .aside {
@@ -141,6 +125,18 @@ ul.sprig {
 
 .aside .title {
   font-size: 18px;
+}
+
+.sprig .title {
+  font-size: 1.5em;
+}
+
+.heading {
+  text-align: center;
+}
+
+.heading.heading-2 {
+  font-size: 1.1em;
 }
 
 .dial-back .title {
