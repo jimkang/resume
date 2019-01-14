@@ -150,6 +150,10 @@ ul.sprig {
   /* font-size: 1.1em; */
 }
 
+.heading.smaller {
+  font-size: 1.1em;
+}
+
 .dial-back .title {
   font-size: 22px;  
 }
