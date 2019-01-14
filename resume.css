@@ -115,7 +115,7 @@ ul.sprig {
 }
 
 .sprigbody {
-  padding-top: 0.5em;
+  /*! padding-top: 0.5em; */
 }
 
 .level-1 {
@@ -221,6 +221,7 @@ li.list-container {
 
 .instructions {
   font-style: italic;
+  font-weight: bold;
 }
 
 a.thumbnail-link {
