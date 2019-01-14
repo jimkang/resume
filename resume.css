@@ -219,6 +219,15 @@ li.list-container {
   font-style: italic;
 }
 
+a.thumbnail-link {
+  border-bottom: none;
+}
+
+.thumbnail-container {
+  display: flex;
+  justify-content: center;
+}
+
 @media (max-width: 568px) {
   body {
     font-size: 18px;
