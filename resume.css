@@ -233,6 +233,10 @@ a.thumbnail-link {
   justify-content: center;
 }
 
+#tldr-slider {
+  border-color: white; /* Need this for the bar to show up on Firefox. */
+}
+
 @media (max-width: 568px) {
   body {
     font-size: 18px;
