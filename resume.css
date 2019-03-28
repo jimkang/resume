@@ -234,7 +234,14 @@ a.thumbnail-link {
 }
 
 #tldr-slider {
-  border-color: white; /* Need this for the bar to show up on Firefox. */
+  background: none;
+  margin: 0.5em;
+}
+
+/* Need this for the bar to show up on Firefox. */
+#tldr-slider::-moz-range-track {
+  background: hsl(34, 30%, 94%);
+  border: none;
 }
 
 @media (max-width: 568px) {
