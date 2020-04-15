@@ -175,7 +175,16 @@ a:visited {
   font-weight: normal;
 }
 
-.controls-container {
+/*
+Counterintuitive, but this will work:
+Putting #controls-container in the
+URL will hide the controls-container.
+*/
+#controls-container:target {
+  display: none;
+}
+
+#controls-container {
   position: fixed;
   top: 0;
   right: 0;
