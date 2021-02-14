@@ -650,8 +650,10 @@
         updateTLDRClasses();
       }
 
-      function updateTLDRClasses() {
-        const level = Math.round(slider.value);
+      function updateTLDRClasses(level) {
+        if (isNaN(level)) {
+          level = Math.round(slider.value);
+        }
         for (var i = 0; i <= maxLevel; ++i) {
           let className = "show-" + i;
           if (i <= level) {
@@ -662,7 +664,13 @@
         }
       }
 
-      updateTLDRClasses();
+      var level;
+      if (window.location.hash === '#print') {
+        level = 3;
+        document.querySelector('.instructions').classList.add('hidden');
+        document.getElementById('controls-container').style.display = 'none';
+      }
+      updateTLDRClasses(level);
     </script>
   </body>
 </html>
