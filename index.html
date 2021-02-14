@@ -102,11 +102,8 @@
 
         <p class="sprig level-2">
           This is an overview of my work. If you just want to go straight to my
-          publicly available code,
-          <a href="https://github.com/jimkang/">here are my Github repos</a
-          >&nbsp;and my&nbsp;<a href="https://www.npmjs.com/~jimkang"
-            >NPM packages</a
-          >.
+          publicly available code, see
+          <a href="https://github.com/jimkang/">github.com/jimkang</a>.
         </p>
       </li>
       <li>
@@ -667,7 +664,7 @@
       var level;
       if (window.location.hash === '#print') {
         level = 3;
-        document.querySelector('.instructions').innerHTML = 'This is a static version of my resume. You can always find the up-to-date one at <a href="https://jimkang.com/resume">jimkang.com/resume</a>.';
+        document.querySelector('.instructions').innerHTML = 'This is a static print version of my resume. You can always find the up-to-date one (with working links) at <a href="https://jimkang.com/resume">jimkang.com/resume</a>.';
         document.getElementById('controls-container').style.display = 'none';
       }
       updateTLDRClasses(level);
