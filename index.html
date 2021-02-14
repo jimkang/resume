@@ -667,7 +667,7 @@
       var level;
       if (window.location.hash === '#print') {
         level = 3;
-        document.querySelector('.instructions').classList.add('hidden');
+        document.querySelector('.instructions').innerHTML = 'This is a static version of my resume. You can always find the up-to-date one at <a href="https://jimkang.com/resume">jimkang.com/resume</a>.';
         document.getElementById('controls-container').style.display = 'none';
       }
       updateTLDRClasses(level);
