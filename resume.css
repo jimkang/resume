@@ -17,6 +17,12 @@ body {
 	align-items: center;
 }
 
+body.print {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #content-root {
   padding-bottom: 4em;
   padding-left: 0.5em;
@@ -36,6 +42,10 @@ body {
   margin-top: 0.8em;
   padding-right: 1em;
   margin-top: 0;
+}
+
+.print .sprig {
+  max-width: 100%;
 }
 
 ul.sprig {
