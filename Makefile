@@ -1,7 +1,7 @@
 include config.mk
 
-prettier:
-	prettier index.html --write
+format:
+	js-beautify -r index.html --indent-size 2 --wrap-line-length 120
 
 push:
 	git push origin master
