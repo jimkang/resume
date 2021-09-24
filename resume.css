@@ -193,6 +193,10 @@ a.pdf-link {
   margin-right: 0.5em;
 }
 
+.date {
+  font-style: italic;
+}
+
 @media (max-width: 568px) {
   body {
     font-size: 18px;
