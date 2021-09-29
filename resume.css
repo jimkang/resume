@@ -62,6 +62,14 @@ ul.sprig {
   display: none;
 }
 
+.project-title {
+  font-family: brandon-grotesque, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 1.1em;
+  list-style-type: none;
+  text-transform: uppercase;
+  margin-left: -2px;
+}
+
 .tldr {
   display: none;
 }
