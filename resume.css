@@ -115,10 +115,6 @@ ul.sprig {
   text-align: center;
 }
 
-.click-to-display > .title {
-  cursor: pointer;
-}
-
 .hidden {
   display: none;
 }
