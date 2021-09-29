@@ -30,7 +30,7 @@ body.print {
   padding-top: 1em;
 }
 
-.bloge .title {
+.title {
   font-family: brandon-grotesque, 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 2em;
   text-transform: uppercase;
@@ -115,11 +115,7 @@ ul.sprig {
   text-align: center;
 }
 
-.heading.smaller {
-  font-size: 1.1em;
-}
-
-.click-to-display > .title, .displaying-hidden > .title {
+.click-to-display > .title {
   cursor: pointer;
 }
 
@@ -165,10 +161,6 @@ URL will hide the controls-container.
   display: flex;
   margin-left: 0.5em;
   flex-grow: 1;
-}
-
-li.list-container {
-  margin-bottom: 1.5em;
 }
 
 .instructions {
