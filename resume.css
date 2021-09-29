@@ -232,6 +232,18 @@ a.pdf-link {
   font-style: italic;
 }
 
+#content-root > li:not(:first-child,:nth-child(2)) {
+  margin-bottom: 2rem;
+}
+
+.skill-list {
+  padding: 0.5rem;
+}
+
+.projects ul > li:not(:first-child) {
+  margin-bottom: 1.5rem;
+}
+
 @media (max-width: 568px) {
   body {
     font-size: 18px;
