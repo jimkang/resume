@@ -62,7 +62,7 @@ ul.sprig {
   display: none;
 }
 
-.project-title {
+.project-title, .education-title {
   font-family: brandon-grotesque, 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 1.1em;
   list-style-type: none;
