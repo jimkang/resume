@@ -297,4 +297,23 @@ a.pdf-link {
   body {
     font-size: 18px;
   }
+
+  .skill-list {
+    display: initial;
+    height: initial;
+  }
+
+  #controls-container {
+    font-size: 12px;
+  }
+
+  .less-label {
+    position: fixed;
+    left: 0;
+  }
+
+  .more-label {
+    position: fixed;
+    right: 4em;
+  }
 }
