@@ -93,6 +93,10 @@ ul.sprig {
   padding-right: 0;
 }
 
+ul.bullets {
+  list-style-type: square;
+}
+
 .sprig li {
   margin-bottom: 0.5em;
 }
@@ -114,27 +118,51 @@ ul.sprig {
 }
 
 .show-0 .level-0 {
-  display: block;
+  display: initial;
 }
 
 .show-1 .level-1 {
-  display: block;
+  display: initial;
 }
 
 .show-2 .level-2 {
-  display: block;
+  display: initial;
 }
 
 .show-3 .level-3 {
-  display: block;
+  display: initial;
 }
 
 .show-4 .level-4 {
-  display: block;
+  display: initial;
 }
 
 .show-5 .level-5 {
-  display: block;
+  display: initial;
+}
+
+.show-0 li.level-0 {
+  display: list-item;
+}
+
+.show-1 li.level-1 {
+  display: list-item;
+}
+
+.show-2 li.level-2 {
+  display: list-item;
+}
+
+.show-3 li.level-3 {
+  display: list-item;
+}
+
+.show-4 li.level-4 {
+  display: list-item;
+}
+
+.show-5 li.level-5 {
+  display: list-item;
 }
 
 .level-1 {
