@@ -1,3 +1,42 @@
+.tk-adobe-garamond-pro {
+  font-family: "adobe-garamond-pro", sans-serif;
+}
+
+.tk-brandon-grotesque {
+  font-family: "brandon-grotesque", sans-serif;
+}
+@font-face {
+  font-family: adobe-garamond-pro;
+  src: url(https://use.typekit.net/af/279ae3/0000000000000000000130e3/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"), url(https://use.typekit.net/af/279ae3/0000000000000000000130e3/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"), url(https://use.typekit.net/af/279ae3/0000000000000000000130e3/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: adobe-garamond-pro;
+  src: url(https://use.typekit.net/af/e4771c/0000000000000000000130e5/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff2"),
+    url(https://use.typekit.net/af/e4771c/0000000000000000000130e5/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff"),
+    url(https://use.typekit.net/af/e4771c/0000000000000000000130e5/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: adobe-garamond-pro;
+  src: url(https://use.typekit.net/af/f430af/0000000000000000000130e6/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"), url(https://use.typekit.net/af/f430af/0000000000000000000130e6/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"), url(https://use.typekit.net/af/f430af/0000000000000000000130e6/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: brandon-grotesque;
+  src: url(https://use.typekit.net/af/1da05b/0000000000000000000132df/27/l?subset_id=2&fvd=n4&v=3) format("woff2"),
+    url(https://use.typekit.net/af/1da05b/0000000000000000000132df/27/d?subset_id=2&fvd=n4&v=3) format("woff"),
+    url(https://use.typekit.net/af/1da05b/0000000000000000000132df/27/a?subset_id=2&fvd=n4&v=3) format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
 html {
   height: 100%;
 }
@@ -18,9 +57,9 @@ body {
 }
 
 body.print {
-  max-width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+  font-size: 18px;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 #content-root {
@@ -30,7 +69,7 @@ body.print {
   padding-top: 1em;
 }
 
-.bloge .title {
+.title {
   font-family: brandon-grotesque, 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 2em;
   text-transform: uppercase;
@@ -54,6 +93,15 @@ ul.sprig {
   padding-right: 0;
 }
 
+ul.bullets {
+  list-style-type: square;
+  padding-left: 0;
+}
+
+ul.bullets li {
+  margin-left: 0.7rem;
+}
+
 .sprig li {
   margin-bottom: 0.5em;
 }
@@ -62,32 +110,64 @@ ul.sprig {
   display: none;
 }
 
+.project-title, .education-title {
+  font-family: brandon-grotesque, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 1.1em;
+  list-style-type: none;
+  text-transform: uppercase;
+  margin-left: -2px;
+}
+
 .tldr {
   display: none;
 }
 
 .show-0 .level-0 {
-  display: block;
+  display: initial;
 }
 
 .show-1 .level-1 {
-  display: block;
+  display: initial;
 }
 
 .show-2 .level-2 {
-  display: block;
+  display: initial;
 }
 
 .show-3 .level-3 {
-  display: block;
+  display: initial;
 }
 
 .show-4 .level-4 {
-  display: block;
+  display: initial;
 }
 
 .show-5 .level-5 {
-  display: block;
+  display: initial;
+}
+
+.show-0 li.level-0 {
+  display: list-item;
+}
+
+.show-1 li.level-1 {
+  display: list-item;
+}
+
+.show-2 li.level-2 {
+  display: list-item;
+}
+
+.show-3 li.level-3 {
+  display: list-item;
+}
+
+.show-4 li.level-4 {
+  display: list-item;
+}
+
+.show-5 li.level-5 {
+  display: list-item;
 }
 
 .level-1 {
@@ -95,24 +175,17 @@ ul.sprig {
   margin-bottom: 0.5em;
 }
 
-.level-2 {
-  margin-top: 0.5em;
-}
-
 .sprig .title {
   font-size: 1.5em;
 }
 
-.heading {
+.print .sprig .title {
+  font-size: 1.2em;
+}
+
+.sprig .title.heading {
   text-align: center;
-}
-
-.heading.smaller {
-  font-size: 1.1em;
-}
-
-.click-to-display > .title, .displaying-hidden > .title {
-  cursor: pointer;
+  font-size: 1.4em;
 }
 
 .hidden {
@@ -159,10 +232,6 @@ URL will hide the controls-container.
   flex-grow: 1;
 }
 
-li.list-container {
-  margin-bottom: 1.5em;
-}
-
 .instructions {
   font-style: italic;
   font-weight: bold;
@@ -193,8 +262,58 @@ a.pdf-link {
   margin-right: 0.5em;
 }
 
+.date {
+  font-style: italic;
+}
+
+#content-root > li:nth-child(3+n)) {
+  margin-bottom: 2rem;
+}
+
+/* Cursed selector */
+#content-root > li > ul > li > ul > li {
+  margin-bottom: 1rem;
+}
+
+.skill-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 10em;
+  padding-left: 0;
+}
+
+.skill-list li {
+  margin-left: 1em;
+  margin-bottom: 0.75em !important;
+  min-width: 7em;
+}
+
+.projects ul > li:not(:first-child) {
+  margin-bottom: 1.5rem;
+}
+
 @media (max-width: 568px) {
   body {
     font-size: 18px;
+  }
+
+  .skill-list {
+    display: initial;
+    height: initial;
+  }
+
+  #controls-container {
+    font-size: 12px;
+  }
+
+  .less-label {
+    position: fixed;
+    left: 0;
+  }
+
+  .more-label {
+    position: fixed;
+    right: 4em;
   }
 }
