@@ -57,9 +57,9 @@ body {
 }
 
 body.print {
-  max-width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+  font-size: 18px;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 #content-root {
@@ -95,6 +95,11 @@ ul.sprig {
 
 ul.bullets {
   list-style-type: square;
+  padding-left: 0;
+}
+
+ul.bullets li {
+  margin-left: 0.7rem;
 }
 
 .sprig li {
@@ -170,16 +175,17 @@ ul.bullets {
   margin-bottom: 0.5em;
 }
 
-.level-2 {
-  margin-top: 0.5em;
-}
-
 .sprig .title {
   font-size: 1.5em;
 }
 
-.heading {
+.print .sprig .title {
+  font-size: 1.2em;
+}
+
+.sprig .title.heading {
   text-align: center;
+  font-size: 1.4em;
 }
 
 .hidden {
@@ -260,12 +266,27 @@ a.pdf-link {
   font-style: italic;
 }
 
-#content-root > li:not(:first-child,:nth-child(2)) {
+#content-root > li:nth-child(3+n)) {
   margin-bottom: 2rem;
 }
 
+/* Cursed selector */
+#content-root > li > ul > li > ul > li {
+  margin-bottom: 1rem;
+}
+
 .skill-list {
-  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 10em;
+  padding-left: 0;
+}
+
+.skill-list li {
+  margin-left: 1em;
+  margin-bottom: 0.75em !important;
+  min-width: 7em;
 }
 
 .projects ul > li:not(:first-child) {
