@@ -57,9 +57,8 @@ body {
 }
 
 body.print {
-  font-size: 18px;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  font-size: 14px;
+  padding-top: 0;
 }
 
 #content-root {
@@ -67,6 +66,10 @@ body.print {
   padding-left: 0.5em;
   padding-right: 0.5em;
   padding-top: 1em;
+}
+
+.print #content-root {
+  padding-top: 0;
 }
 
 .title {
