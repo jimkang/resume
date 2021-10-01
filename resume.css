@@ -269,7 +269,7 @@ a.pdf-link {
   font-style: italic;
 }
 
-#content-root > li:nth-child(3+n)) {
+#content-root > li:not(:first-child,:nth-child(2)) {
   margin-bottom: 2rem;
 }
 
