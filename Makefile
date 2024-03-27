@@ -1,7 +1,7 @@
 include config.mk
 
 format:
-	js-beautify -r index.html --indent-size 2 --wrap-line-length 120
+	./node_modules/.bin/js-beautify -r index.html --indent-size 2 --wrap-line-length 120
 
 push:
 	git push origin master

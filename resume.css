@@ -50,7 +50,7 @@ body {
 
   height: 100%;
   margin: 0;
-  padding-top: 1em;
+  padding-top: 1.5em;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -225,12 +225,13 @@ URL will hide the controls-container.
   width: 100%;
   font-family: brandon-grotesque, 'Helvetica Neue', Helvetica, sans-serif;
   text-transform: uppercase;
-  font-size: 28px;
+  font-size: 18px;
   display: flex;
 }
 
 .controls {
   display: flex;
+  flex-wrap: wrap;
   margin-left: 0.5em;
   flex-grow: 1;
 }
@@ -238,6 +239,14 @@ URL will hide the controls-container.
 .instructions {
   font-style: italic;
   font-weight: bold;
+}
+
+.controls .instructions {
+  width: 100%;
+  text-transform: none;
+	font-family: garamond, adobe-garamond-pro, serif;
+  font-size: 18px;
+  color: hsl(34, 30%, 94%);
 }
 
 a.thumbnail-link {
