@@ -43,7 +43,7 @@ html {
 
 body {
 	font-family: garamond, adobe-garamond-pro, serif;
-  font-size: 24px;
+  font-size: 20px;
 
   background-color: hsl(34, 30%, 94%);
   color: hsl(230, 8%, 25%);
@@ -179,7 +179,8 @@ ul.bullets li {
 }
 
 .sprig .title {
-  font-size: 1.5em;
+  font-size: 1em;
+  font-weight: bold;
 }
 
 .print .sprig .title {
