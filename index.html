@@ -25,7 +25,7 @@
         <li>
           <ul class="sprig tldr level-1" id="work-list">
             <li>
-              <ul class="sprig tldr level-2" id="gcw">
+              <ul class="sprig tldr level-1" id="gcw">
                 <li class="title">Ghost Crab Workshop</li>
                 <li class="date tldr level-2">Aug. 2021 to present</li>
                 <li>
@@ -338,6 +338,7 @@
             <li>Rollup</li>
             <li>Web audio</li>
             <li>Puppeteer, Playwright</li>
+            <li>Godot</li>
             <li class="tldr level-5">…and more!</li>
           </ul>
         </li>
@@ -347,7 +348,7 @@
   <div id="controls-container">
     <div class="controls">
       <span class="less-label">Less info</span>
-      <input type="range" min="1" max="5" id="tldr-slider" value="3" step="1" />
+      <input type="range" min="1" max="5" id="tldr-slider" value="2" step="1" />
       <span class="more-label">More info</span>
     </div>
     <a class="pdf-link" href="jimkang-resume.pdf">PDF version</a>
@@ -377,7 +378,7 @@
 
     var level;
     if (window.location.hash === "#print") {
-      level = 3;
+      level = 2;
       document.getElementById("controls-container").style.display = "none";
       document.body.classList.add("print");
       let printOnlyNodes = document.querySelectorAll(".print-only");
