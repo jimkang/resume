@@ -378,7 +378,6 @@
     var level;
     if (window.location.hash === "#print") {
       level = 3;
-      document.querySelector(".instructions").innerHTML = "";
       document.getElementById("controls-container").style.display = "none";
       document.body.classList.add("print");
       let printOnlyNodes = document.querySelectorAll(".print-only");
