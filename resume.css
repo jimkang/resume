@@ -228,26 +228,20 @@ URL will hide the controls-container.
   text-transform: uppercase;
   font-size: 18px;
   display: flex;
+  flex-wrap: wrap;
 }
 
-.controls {
+.control-labels {
   display: flex;
   flex-wrap: wrap;
   margin-left: 0.5em;
   flex-grow: 1;
+  justify-content: space-between;
 }
 
-.instructions {
-  font-style: italic;
-  font-weight: bold;
-}
-
-.controls .instructions {
-  width: 100%;
-  text-transform: none;
-	font-family: garamond, adobe-garamond-pro, serif;
-  font-size: 18px;
-  color: hsl(34, 30%, 94%);
+.more-label {
+  position: fixed;
+  right: .5em;
 }
 
 a.thumbnail-link {
@@ -261,7 +255,8 @@ a.thumbnail-link {
 
 #tldr-slider {
   background: none;
-  margin: 0.5em;
+  width: 99%;
+  margin: 0;
 }
 
 /* Need this for the bar to show up on Firefox. */
@@ -273,6 +268,7 @@ a.thumbnail-link {
 a.pdf-link {
   color: wheat;
   margin-right: 0.5em;
+  margin-left: auto;
 }
 
 .date {
@@ -327,6 +323,10 @@ a.pdf-link {
 
   .more-label {
     position: fixed;
-    right: 4em;
+    right: 1em;
+  }
+
+  #tldr-slider {
+    margin-top: 0.5em;
   }
 }
