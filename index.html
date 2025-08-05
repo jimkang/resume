@@ -30,14 +30,35 @@
                 <li class="date tldr level-2">Aug. 2021 to present</li>
                 <li>
                   <ul class="tldr level-1 bullets">
-                    <li>Currently designing and implementing data visualization generators using JavaScript, TypeScript,
-                      Node, D3,
-                      Vega, and AWS lambdas for <a href="https://climatecentral.org">Climate Central</a>.</li>
-                    <li>Reviewing code for <a href="https://www.pullrequest.com/">PullRequest</a>.</li>
-                    <li class="tldr level-3">Introduced tests and improved Node app stability for <a
-                        href="https://www.designacademy.nl/">Design Academy Eindhoven</a>.</li>
-                    <li class="tldr level-3">Building a word usage examples pipeline for <a
+                    <li class="tldr level-1">Building word usage examples pipelines for <a
                         href="https://www.wordnik.com/">Wordnik</a>.
+                      <ul class="tldr level-1 bullets">
+                        <li>Building pipelines that extract example sentences from various sources and gets them into online dictionary entries so that users can get an idea about how words are used.
+                          <ul>
+                            <li>One pipeline takes books dropped into storage, parses the epub format, breaks the contents up into sentences, filters those sentences, then bulk uploads them into Wordnik's database.</li>
+                            <li>Another pipeline streams a very large (~20 GB) Wiktionary data dump using http range requests, uses hash checks against a Dynamo DB for changes in the Wiktionary entries from week to week, then extracts the updated entries' example sentences, and gets them into Wordnik's database.</li>
+                            <li>A third pipeline uses a modified fork of the open source <a href="https://github.com/MaxBittker/nyt-first-said">nyt-first-said</a> to scrape the New York Times for words that it has never used before, then filters for certain conditions, extracts the surrounding sentences from the article, and puts them into Wordnik.</li>
+                          </ul>
+                        <li>The pipelines are composed of AWS lambdas, chained via schedulers, direct invocation, or S3 triggers. Some are in Node and some are in Python (for ease of access to NLP libraries).</li>
+                        <li>I build a custom observability scheme so that the progress of a source through the pipelines can be observed.</li>
+                      </ul>
+                    </li>
+                    <li>Reviewing code for <a href="https://www.pullrequest.com/">PullRequest</a>.
+                      <ul class="tldr level-1 bullets">
+                        <li>JavaScript/TypeScript</li>
+                        <li>Python</li>
+                      </ul>
+                    </li>
+                    <li>Designed and implemented data visualization generators using JavaScript, TypeScript,
+                      Node, D3,
+                      Vega, and AWS lambdas for <a href="https://climatecentral.org">Climate Central</a>.
+                      <ul class="tldr level-1 bullets">
+                        <li>Vega modified DSL</li>
+                        <li>Screenshot service</li>
+                      </ul>
+                    </li>
+                    <li class="tldr level-3">Introduced tests and improved Node app stability for <a
+                      href="https://www.designacademy.nl/">Design Academy Eindhoven</a>.
                     </li>
                   </ul>
                 </li>
