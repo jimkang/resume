@@ -31,7 +31,7 @@
                 <li>
                   <ul class="tldr level-1 bullets">
                     <li>Building ETL pipelines for <a href="https://www.wordnik.com/">Wordnik</a>that extract example sentences from various sources and gets them into online dictionary entries so that users can get ideas about how words are used.
-                      <ul>
+                      <ul class="tldr level-2 bullets">
                         <li>I have built three pipelines so far.
                           <ul>
                             <li>One pipeline takes books dropped into storage, parses the epub format, breaks the contents up into sentences, filters those sentences, then bulk uploads them into Wordnik's database.</li>
@@ -44,12 +44,12 @@
                       </ul>
                     </li>
                     <li>Reviewing code for <a href="https://www.pullrequest.com/">PullRequest</a>. I review mostly JavaScript/TypeScript from various client companies for bugs, error handling, maintainability, and security issues and provide explanations of issues as well as actionable remediation suggestions.</li>
-                    <li>Designed and implemented data visualization generators using JavaScript, TypeScript,
-                      Node, D3,
-                      Vega, and AWS lambdas for <a href="https://climatecentral.org">Climate Central</a>.
-                      <ul class="tldr level-1 bullets">
-                        <li>Vega modified DSL</li>
-                        <li>Screenshot service</li>
+                    <li>Designed and built data visualization sytems for <a href="https://climatecentral.org">Climate Central</a>.
+                        <ul class="tldr level-2 bullets">
+                          <li>Modified an existing system that used JavaScript configuration files to create new graphics. To avoid having to build code to create new graphics, I replaced that with an engine that rendered <a href="https://vega.github.io/">Vega</a> specifications (which are declarative and accessible to a wider group of authors than JavaScript code is) to SVG.</li>
+                          <li>Built a screenshot service that rendered web pages to images using Playwright and Docker running on AWS ECS.</li>
+                          <li>Provided general front-end development work as needed.</li>
+                          <li>Worked in D3, JavaScript, Vega, Node, Playwright, and Docker.</li>
                       </ul>
                     </li>
                     <li class="tldr level-3">Introduced tests and improved Node app stability for <a
