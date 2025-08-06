@@ -30,17 +30,17 @@
                 <li class="date tldr level-2">Aug. 2021 to present</li>
                 <li>
                   <ul class="tldr level-1 bullets">
-                    <li>Building ETL pipelines for <a href="https://www.wordnik.com/">Wordnik</a>that extract example sentences from various sources and gets them into online dictionary entries so that users can get ideas about how words are used.
+                    <li>Building ETL pipelines for <a href="https://www.wordnik.com/">Wordnik</a> that extract example sentences from various sources and gets them into online dictionary entries so that users can get ideas about how words are used.
                       <ul class="tldr level-2 bullets">
-                        <li>I have built three pipelines so far.
+                        <li>The three pipelines:
                           <ul>
                             <li>One pipeline takes books dropped into storage, parses the epub format, breaks the contents up into sentences, filters those sentences, then bulk uploads them into Wordnik's database.</li>
-                            <li>Another pipeline streams a very large (~20 GB) Wiktionary data dump using http range requests, uses hash checks against a Dynamo DB for changes in the Wiktionary entries from week to week, then extracts the updated entries' example sentences, and gets them into Wordnik's database.</li>
+                            <li>Another pipeline streams a large (~20 GB) Wiktionary data dump using http range requests, uses hash checks against a Dynamo DB for changes in the Wiktionary entries from week to week, then extracts the updated entries' example sentences, and gets them into Wordnik's database.</li>
                             <li>A third pipeline uses a modified fork of the open source <a href="https://github.com/MaxBittker/nyt-first-said">nyt-first-said</a> to scrape the New York Times for words that it has never used before, then filters for certain conditions, extracts the surrounding sentences from the article, and puts them into Wordnik.</li>
                           </ul>
                         </li>
                         <li>The pipelines are composed of AWS lambdas, chained via schedulers, direct invocation, or S3 triggers. Some are in Node and some are in Python (for ease of access to NLP libraries).</li>
-                        <li>I built a custom observability scheme so that the progress of a source through the pipelines can be observed.</li>
+                        <li>Built a custom observability scheme so that the progress of a source through the pipelines can be observed.</li>
                       </ul>
                     </li>
                     <li>Reviewing code for <a href="https://www.pullrequest.com/">PullRequest</a>. I review mostly JavaScript/TypeScript from various client companies for bugs, error handling, maintainability, and security issues and provide explanations of issues as well as actionable remediation suggestions.</li>
@@ -367,7 +367,6 @@
       <span class="more-label">More info</span>
     </div>
     <input type="range" min="1" max="5" id="tldr-slider" value="2" step=".01" />
-    <a class="pdf-link" href="jimkang-resume.pdf">PDF version</a>
   </div>
   <script>
     var slider = document.getElementById("tldr-slider");
