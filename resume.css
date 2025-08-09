@@ -48,6 +48,7 @@ body {
   background-color: hsl(34, 30%, 94%);
   color: hsl(230, 8%, 25%);
 
+  hyphens: auto;
   line-height: 1.3em;
   height: 100%;
   margin: 0;
